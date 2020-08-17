@@ -1,0 +1,48 @@
+@import "variables";
+
+.navigation {
+  display: inline-block;
+  box-shadow: 0 0 8px 0 black;
+  width: 100%;
+  height: $navigation-height;
+  margin: 0;
+  background-color: lightblue;
+
+  .navigation-list {
+    list-style: none;
+    height: 100%;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navigation-item {
+      font-size: 24px;
+      display: inline-block;
+      padding: 12px 20px;
+
+      .navigation-link {
+        text-decoration: none;
+        font-weight: bold;
+        color: $navigation-text-color;
+
+        &.active-route {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    .navigation-list {
+
+      padding: 0;
+
+      .navigation-item {
+        padding: 8px;
+      }
+    }
+  }
+}

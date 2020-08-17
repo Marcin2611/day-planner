@@ -1,0 +1,6 @@
+@import "variables";
+
+.body-content {
+  background-color: #e4e4e4;
+  height: calc(100vh - #{$navigation-height});
+}
